@@ -9,6 +9,6 @@ updates:
   - dependency-name: "@types/node"
     versions:
     - 15.0.0
-  - dependency-name: "@storybook/react"
+  - dependency-name: "node-sass"
     versions:
-    - 6.2.4
+    - 6.0.0
