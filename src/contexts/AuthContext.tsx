@@ -19,7 +19,7 @@ type AuthContextProviderProps = {
 
 export const AuthContext = createContext({} as AuthContextType);
 
-export function AuthContextProvider(props: AuthContextProviderProps) {
+export function AuthContextProvider({ children }: AuthContextProviderProps) {
     const [user, setUser] = useState<User>();
 
     useEffect(() => {
@@ -63,5 +63,5 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
             });
         }
     }
-    return <AuthContext.Provider value={{ user, signInWithGoogle }}>{props.children}</AuthContext.Provider>;
+    return <AuthContext.Provider value={{ user, signInWithGoogle }}>{children}</AuthContext.Provider>;
 }
