@@ -10,5 +10,4 @@ updates:
     versions:
     - 15.0.0
   - dependency-name: "node-sass"
-    versions:
-    - 6.0.0
+    versions: ["6.x"]
